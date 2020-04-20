@@ -5,4 +5,4 @@ jobs:
       - image: circleci/python:3.6.2-stretch-browsers
     steps:
       - checkout
-      - run: apt-get install google-cloud-sdk -y
+      - run:sudo apt-get update && sudo apt-get install google-cloud-sdk -y
